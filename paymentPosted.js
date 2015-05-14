@@ -6,7 +6,7 @@ Does not take into account business hours. Assume bank days (i.e. not weekends/h
 Date and time in GMT
 
 -----
-input: Date Object
+input: Date Object or Date String
 output: boolean and if false return date payment will be posted
 -----
 ideas
