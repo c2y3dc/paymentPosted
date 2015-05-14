@@ -1,7 +1,10 @@
 /*
-Write a function that takes a due date to verify if a payment made right now will be posted on time before the due date. If invalid, return the next date it will be processed.
+ onTime is a function that takes a due date to verify if a payment made right now will be posted on time before the due date. If invalid, return the next date it will be processed.
 
-Assume bank days (i.e. not weekends/holidays), and 3 days for processing time.
+Does not take into account business hours. Assume bank days (i.e. not weekends/holidays), and 3 days for processing time.
+
+Date and time in GMT
+
 -----
 input: Date Object
 output: boolean and if false return date payment will be posted
@@ -10,8 +13,7 @@ ideas
 1/ check if current Day() + 3 within valid range
 & within biz days req 
 2/ if yes return true
-3/ else pad non-business days, add 3 biz days and return actual processed date
-
+3/ else pad non-business days and return actual processed date
 */
 
 // extend Date object with addDays method
